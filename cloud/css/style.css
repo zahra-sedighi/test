@@ -1,0 +1,27 @@
+body{
+    background: skyblue;
+}
+.cloud{
+    width: 100px;
+    height: 100px;
+    margin: 100px auto;
+    border-radius: 50%;
+    background: #fff;
+    cursor: pointer;
+    box-shadow:0     10px  5px  -7px #666, 
+               75px   1px  0    -3px #FFF,
+               78px   4px  6px  -5px #666,
+              -77px   1px  0    -3px #FFF,
+              -80px   4px  6px  -5px #666,
+              -26px -50px  0     9px #FFF,
+              -27px -54px  6px   7px #666,
+               53px -50px  0   -18px #FFF,
+               56px -53px  6px -21px #666;
+
+    animation: shake .25s ease-in infinite;
+}
+
+@keyframes shake{
+    50% {transform : rotate( 2deg);}
+    100% {transform : rotate(-2deg);}
+}
